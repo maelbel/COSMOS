@@ -1,0 +1,332 @@
+{{> head}}
+        <link rel="stylesheet" href="css/systeme_solaire.css">
+        <link rel="stylesheet" href="css/product.css">
+        <link rel="stylesheet" href="css/heroes.css">
+{{> header}}
+
+<a href='{{url}}#ancre_top' class='ancre encart' id='ancre'><img src='media/images/ancre.png' class='arrow'/></a>
+
+<main>
+	<div class='position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-dark' id='header'>
+		<div class='col-md-8 p-lg-8 mx-auto img-fluid my-5'>
+			<h1 class='display-4 fw-normal'>{{{__ 'solar_system.titleSS' }}}</h1> 
+			<p class='lead fw-normal'>{{{__ 'solar_system.contentSS' }}}</p>
+			<a class='btn btn-outline-secondary' href='{{url}}#body'>{{{__ 'common.button' }}}</a> 
+		</div>
+	</div>
+	</div>
+	<div id='body'>
+		<div id='info_SS'>{{{__ 'solar_system.titleSS' }}}<p class="lead"><i>{{{__ 'solar_system.noteSS' }}}</i></p></div>
+		<div id='cadre_SS'></div>
+		<div id='systeme_solaire'>
+			<div id='info_planete' class='titre_info'>{{{__ 'solar_system.titleP' }}}</div>
+			<div id='cadre_planete'></div>
+			<div id='info_planete_naine' class='titre_info'>{{{__ 'solar_system.titlePN' }}}</div>
+			<div id='cadre_planete_naine'></div>
+			<div id='info_soleil' class='titre_info'><a href='{{url}}#aSoleil'>{{{__ 'solar_system.titleSoleil' }}}</a>
+			</div>
+			<div id='cadre_soleil'></div>
+			<div id='info_mercure' class='titre_info'><a href='{{url}}#aMercure'>{{{__ 'solar_system.titleMercure' }}}</a>
+			</div>
+			<div id='cadre_mercure'></div>
+			<div id='info_venus' class='titre_info'><a href='{{url}}#aVenus'>{{{__ 'solar_system.titleVenus' }}}</a>
+			</div>
+			<div id='cadre_venus'></div>
+			<div id='info_terre' class='titre_info'><a href='{{url}}#aTerre'>{{{__ 'solar_system.titleTerre' }}}</a>
+			</div>
+			<div id='cadre_terre'></div>
+			<div id='info_mars' class='titre_info'><a href='{{url}}#aMars'>{{{__ 'solar_system.titleMars' }}}</a>
+			</div>
+			<div id='cadre_mars'></div>
+			<div id='info_ceres' class='titre_info'><a href='{{url}}#aCeres'>{{{__ 'solar_system.titleCeres' }}}</div>
+			<div id='cadre_ceres'></div>
+			<div id='info_ceinture_asteroides' class='titre_info'><a href='{{url}}#aCeintureA'>{{{__ 'solar_system.titleCA' }}}</a>
+			</div>
+			<div id='cadre_ceinture_asteroides'></div>
+			<div id='info_jupiter' class='titre_info'><a href='{{url}}#aJupiter'>{{{__ 'solar_system.titleJupiter' }}}</a>
+			</div>
+			<div id='cadre_jupiter'></div>
+			<div id='info_saturne' class='titre_info'><a href='{{url}}#aSaturne'>{{{__ 'solar_system.titleSaturne' }}}</a>
+			</div>
+			<div id='cadre_saturne'></div>
+			<div id='info_uranus' class='titre_info'><a href='{{url}}#aUranus'>{{{__ 'solar_system.titleUranus' }}}</a>
+			</div>
+			<div id='cadre_uranus'></div>
+			<div id='info_neptune' class='titre_info'><a href='{{url}}#aNeptune'>{{{__ 'solar_system.titleNeptune' }}}</a>
+			</div>
+			<div id='cadre_neptune'></div>
+			<div id='info_pluton' class='titre_info'><a href='{{url}}#aPluton'>{{{__ 'solar_system.titlePluton' }}}</a>
+			</div>
+			<div id='cadre_pluton'></div>
+			<div id='info_ceinture_kuiper' class='titre_info'><a href='{{url}}#aCeintureK'>{{{__ 'solar_system.titleCK' }}}</a>
+			</div>
+			<div id='cadre_ceinture_kuiper'></div>
+			<div id='info_haumea' class='titre_info'><a href='{{url}}#aHaumea'>{{{__ 'solar_system.titleHaumea' }}}</a>
+			</div>
+			<div id='cadre_haumea'></div>
+			<div id='info_makemake' class='titre_info'><a href='{{url}}#aMakemake'>{{{__ 'solar_system.titleMakemake' }}}</a>
+			</div>
+			<div id='cadre_makemake'></div>
+			<div id='info_eris' class='titre_info'><a href='{{url}}#aEris'>{{{__ 'solar_system.titleEris' }}}</a>
+			</div>
+			<div id='cadre_eris'></div>
+			<div id='soleil'></div>
+			<div id='mercure' class='orbite'>
+				<div id='planete_mercure'></div>
+			</div>
+			<div id='venus' class='orbite'>
+				<div id='planete_venus'></div>
+			</div>
+			<div id='terre' class='orbite'>
+				<div id='planete_terre'></div>
+			</div>
+			<div id='mars' class='orbite'>
+				<div id='planete_mars'></div>
+			</div>
+			<div id='ceres' class='orbite'>
+				<div id='planete_ceres'></div>
+			</div>
+			<div id='ceinture_asteroides'></div>
+			<div id='ceinture_asteroides1'></div>
+			<div id='jupiter' class='orbite'>
+				<div id='planete_jupiter'></div>
+			</div>
+			<div id='saturne' class='orbite'>
+				<div id='planete_saturne'>
+					<div id='anneau_saturne'></div>
+				</div>
+			</div>
+			<div id='uranus' class='orbite'>
+				<div id='planete_uranus'>
+					<div id='anneau_uranus'></div>
+				</div>
+			</div>
+			<div id='neptune' class='orbite'>
+				<div id='planete_neptune'></div>
+			</div>
+			<div id='pluton' class='orbite'>
+				<div id='planete_pluton'></div>
+			</div>
+			<div id='ceinture_kuiper'></div>
+			<div id='ceinture_kuiper1'></div>
+			<div id='haumea' class='orbite'>
+				<div id='planete_haumea'></div>
+			</div>
+			<div id='makemake' class='orbite'>
+				<div id='planete_makemake'></div>
+			</div>
+			<div id='eris' class='orbite'>
+				<div id='planete_eris'></div>
+			</div>
+		</div>
+	</div>
+	<div class='container col-xxl-8 px-4 py-5' id='aSoleil'>
+		<div class='row flex-lg-row-reverse align-items-center g-5 py-5'>
+			<div class='col-10 col-sm-8 col-lg-6'>
+				<img src='media/images/systeme_solaire/sun.jpg' class='d-block mx-lg-auto img-fluid' alt='Bootstrap Themes' loading='lazy'>
+			</div>
+			<div class='col-lg-6' style='text-align: left;'>
+				<h1 class='display-5 fw-bold lh-1 mb-3'>{{{__ 'solar_system.titleSoleil' }}}<div class='categorie'>{{{__ 'solar_system.categorie1' }}}</div></h1>
+				<p class='lead'>{{{__ 'solar_system.contentSoleil' }}}</p>
+			</div>
+		</div>
+	</div>
+	</div>
+	<div class='d-md-flex flex-md-equal w-100 my-md-3 ps-md-3'>
+		<div class='bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden' id='aMercure'>
+			<div class='my-3 py-3'>
+				<h2 class='display-5'>{{{__ 'solar_system.titleMercure' }}}</h2> 
+				<p class='lead categorie'>{{{__ 'solar_system.categorie2' }}}</p>
+			</div>
+			<img src='media/images/systeme_solaire/mercure.jpg' class='d-block mx-lg-auto img-fluid astre' alt='Bootstrap Themes' loading='lazy' />
+			<div class=" mx-auto col-10 col-sm-8 col-lg-6 my-3 py-3">
+				<p>{{{__ 'solar_system.contentMercure' }}}</p>
+				<p class="lead">{{{__ 'solar_system.lune' }}}</p>
+				<p class="">{{{__ 'solar_system.luneNone' }}}</p>
+			</div>
+		</div>
+		<div class='bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden' id='aVenus'>
+			<div class='my-3 py-3'>
+				<h2 class='display-5'>{{{__ 'solar_system.titleVenus' }}}</h2> 
+				<p class='lead categorie'>{{{__ 'solar_system.categorie2' }}}</p>
+			</div>
+			<img src='media/images/systeme_solaire/venus.jpg' class='d-block mx-lg-auto img-fluid astre' alt='Bootstrap Themes' loading='lazy' />
+			<div class=" mx-auto col-10 col-sm-8 col-lg-6 my-3 py-3">
+				<p>{{{__ 'solar_system.contentVenus' }}}</p>
+				<p class="lead">{{{__ 'solar_system.lune' }}}</p>
+				<p class="">{{{__ 'solar_system.luneNone' }}}</p>
+			</div>
+		</div>
+	</div>
+	<div class='d-md-flex flex-md-equal w-100 my-md-3 ps-md-3'>
+		<div class='bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden' id='aTerre'>
+			<div class='my-3 py-3'>
+				<h2 class='display-5'>{{{__ 'solar_system.titleTerre' }}}</h2> 
+				<p class='lead categorie'>{{{__ 'solar_system.categorie2' }}}</p>
+			</div>
+			<img src='media/images/systeme_solaire/terre.png' class='d-block mx-lg-auto img-fluid astre' alt='Bootstrap Themes' loading='lazy' />
+			<div class=" mx-auto col-10 col-sm-8 col-lg-6 my-3 py-3">
+				<p>{{{__ 'solar_system.contentTerre' }}}</p>
+				<p class="lead">{{{__ 'solar_system.lune' }}}</p>
+				<p class="">{{{__ 'solar_system.luneTerre' }}}</p>
+			</div>
+		</div>
+		<div class='bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden' id='aMars'>
+			<div class='my-3 py-3'>
+				<h2 class='display-5'>{{{__ 'solar_system.titleMars' }}}</h2> 
+				<p class='lead categorie'>{{{__ 'solar_system.categorie2' }}}</p>
+			</div>
+			<img src='media/images/systeme_solaire/mars.png' class='d-block mx-lg-auto img-fluid astre' alt='Bootstrap Themes' loading='lazy' />
+			<div class=" mx-auto col-10 col-sm-8 col-lg-6 my-3 py-3">
+				<p>{{{__ 'solar_system.contentMars' }}}</p>
+				<p class="lead">{{{__ 'solar_system.lune' }}}</p>
+				<p class="">{{{__ 'solar_system.luneMars' }}}</p>
+			</div>
+		</div>
+	</div>
+        <div id="CeintureA">
+                <div class='container col-xxl-8 px-4 py-5' id='aCeintureA'>
+                        <div class='row flex-lg-row-reverse align-items-center g-5 py-5'>
+                                <div class='col-10 col-sm-8 col-lg-6'></div>
+                                <div class='col-lg-6' style='text-align: left;'>
+                                        <h1 class='display-5 fw-bold lh-1 mb-3'>{{{__ 'solar_system.titleCA' }}}</h1> 
+                                        <p class='lead'>{{{__ 'solar_system.contentCA' }}}</p>
+                                </div>
+                        </div>
+                </div>
+        </div>
+	<div class='container col-xxl-8 px-4 py-5' id='aCeres'>
+		<div class='row flex-lg-row align-items-center g-5 py-5'>
+			<div class='col-10 col-sm-8 col-lg-5'>
+				<img src='media/images/systeme_solaire/ceres.jpg' class='d-block mx-lg-auto img-fluid' alt='Bootstrap Themes' loading='lazy'>
+			</div>
+			<div class='col-lg-7' style='text-align: right;'>
+				<h1 class='display-5 fw-bold lh-1 mb-3'>{{{__ 'solar_system.titleCeres' }}}<div class='categorie'>{{{__ 'solar_system.categorie4' }}}</div></h1> 
+				<p class='lead '>{{{__ 'solar_system.contentCeres' }}}</p>
+				<p class="lead">{{{__ 'solar_system.lune' }}}</p>
+				<p class="">{{{__ 'solar_system.luneNone' }}}</p>
+			</div>
+		</div>
+	</div>
+	<div class='d-md-flex flex-md-equal w-100 my-md-3 ps-md-3'>
+		<div class='bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden' id='aJupiter'>
+			<div class='my-3 py-3'>
+				<h2 class='display-5'>{{{__ 'solar_system.titleJupiter' }}}</h2> 
+				<p class='lead categorie'>{{{__ 'solar_system.categorie3' }}}</p>
+			</div>
+			<img src='media/images/systeme_solaire/jupiter.jpg' class='d-block mx-lg-auto img-fluid astre' alt='Bootstrap Themes' loading='lazy' />
+			<div class=" mx-auto col-10 col-sm-8 col-lg-6 my-3 py-3">
+				<p>{{{__ 'solar_system.contentJupiter' }}}</p>
+				<p class="lead">{{{__ 'solar_system.lune' }}}</p>
+				<p class="">{{{__ 'solar_system.luneJupiter' }}}</p>
+			</div>
+		</div>
+		<div class='bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden' id='aSaturne'>
+			<div class='my-3 py-3'>
+				<h2 class='display-5'>{{{__ 'solar_system.titleSaturne' }}}</h2> 
+				<p class='lead categorie'>{{{__ 'solar_system.categorie3' }}}</p>
+			</div>
+			<img src='media/images/systeme_solaire/saturne.jpg' id='saturn' class='d-block mx-lg-auto img-fluid astre' alt='Bootstrap Themes' loading='lazy' />
+			<div class=" mx-auto col-10 col-sm-8 col-lg-6 my-3 py-3">
+				<p>{{{__ 'solar_system.contentSaturne' }}}</p>
+				<p class="lead">{{{__ 'solar_system.lune' }}}</p>
+				<p class="">{{{__ 'solar_system.luneSaturne' }}}</p>
+			</div>
+		</div>
+	</div>
+	<div class='d-md-flex flex-md-equal w-100 my-md-3 ps-md-3'>
+		<div class='bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden' id='aUranus'>
+			<div class='my-3 py-3'>
+				<h2 class='display-5'>{{{__ 'solar_system.titleUranus' }}}</h2> 
+				<p class='lead categorie'>{{{__ 'solar_system.categorie3' }}}</p>
+			</div>
+			<img src='media/images/systeme_solaire/uranus.jpg' class='d-block mx-lg-auto img-fluid astre' alt='Bootstrap Themes' loading='lazy' />
+			<div class=" mx-auto col-10 col-sm-8 col-lg-6 my-3 py-3">
+				<p>{{{__ 'solar_system.contentUranus' }}}</p>
+				<p class="lead">{{{__ 'solar_system.lune' }}}</p>
+				<p class="">{{{__ 'solar_system.luneUranus' }}}</p>
+			</div>
+		</div>
+		<div class='bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden' id='aNeptune'>
+			<div class='my-3 py-3'>
+				<h2 class='display-5'>{{{__ 'solar_system.titleNeptune' }}}</h2> 
+				<p class='lead categorie'>{{{__ 'solar_system.categorie3' }}}</p>
+			</div>
+			<img src='media/images/systeme_solaire/neptune.jpg' class='d-block mx-lg-auto img-fluid astre' alt='Bootstrap Themes' loading='lazy' />
+			<div class=" mx-auto col-10 col-sm-8 col-lg-6 my-3 py-3">
+				<p>{{{__ 'solar_system.contentNeptune' }}}</p>
+				<p class="lead">{{{__ 'solar_system.lune' }}}</p>
+				<p class="">{{{__ 'solar_system.luneNeptune' }}}</p>
+			</div>
+		</div>
+	</div>
+        <div id="CeintureK">
+                <div class='container col-xxl-8 px-4 py-5' id='aCeintureK'>
+                        <div class='row flex-lg-row-reverse align-items-center g-5 py-5'>
+                                <div class='col-10 col-sm-8 col-lg-6'></div>
+                                <div class='col-lg-6' style='text-align: left;'>
+                                        <h1 class='display-5 fw-bold lh-1 mb-3'>{{{__ 'solar_system.titleCK' }}}</h1> 
+                                        <p class='lead'>{{{__ 'solar_system.contentCK' }}}</p>
+                                </div>
+                        </div>
+                </div>
+        </div>
+	<div class='d-md-flex flex-md-equal w-100 my-md-3 ps-md-3'>
+		<div class='bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden' id='aPluton'>
+			<div class='my-3 py-3'>
+				<h2 class='display-5'>{{{__ 'solar_system.titlePluton' }}}</h2> 
+				<p class='lead categorie'>{{{__ 'solar_system.categorie4' }}}</p>
+			</div>
+			<img src='media/images/systeme_solaire/pluton.jpg' class='d-block mx-lg-auto img-fluid astre' alt='Bootstrap Themes' loading='lazy' />
+			<div class=" mx-auto col-10 col-sm-8 col-lg-6 my-3 py-3">
+				<p>{{{__ 'solar_system.contentPluton' }}}</p>
+				<p class="lead">{{{__ 'solar_system.lune' }}}</p>
+				<p class="">{{{__ 'solar_system.lunePluton' }}}</p>
+			</div>
+		</div>
+		<div class='bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden' id='aHaumea'>
+			<div class='my-3 py-3'>
+				<h2 class='display-5'>{{{__ 'solar_system.titleHaumea' }}}</h2> 
+				<p class='lead categorie'>{{{__ 'solar_system.categorie4' }}}</p>
+			</div>
+			<img src='media/images/systeme_solaire/haumea.jpg' class='d-block mx-lg-auto img-fluid astre' alt='Bootstrap Themes' loading='lazy' />
+			<div class=" mx-auto col-10 col-sm-8 col-lg-6 my-3 py-3">
+				<p>{{{__ 'solar_system.contentHaumea' }}}</p>
+				<p class="lead">{{{__ 'solar_system.lune' }}}</p>
+				<p class="">{{{__ 'solar_system.luneHaumea' }}}</p>
+			</div>
+		</div>
+	</div>
+	<div class='d-md-flex flex-md-equal w-100 my-md-3 ps-md-3'>
+		<div class='bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden' id='aMakemake'>
+			<div class='my-3 py-3'>
+				<h2 class='display-5'>{{{__ 'solar_system.titleMakemake' }}}</h2> 
+				<p class='lead categorie'>{{{__ 'solar_system.categorie4' }}}</p>
+			</div>
+			<img src='media/images/systeme_solaire/makemake.png' class='d-block mx-lg-auto img-fluid astre' alt='Bootstrap Themes' loading='lazy' />
+			<div class=" mx-auto col-10 col-sm-8 col-lg-6 my-3 py-3">
+				<p>{{{__ 'solar_system.contentMakemake' }}}</p>
+				<p class="lead">{{{__ 'solar_system.lune' }}}</p>
+				<p class="">{{{__ 'solar_system.luneMakemake' }}}</p>
+			</div>
+		</div>
+		<div class='bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden' id='aEris'>
+			<div class='my-3 py-3'>
+				<h2 class='display-5'>{{{__ 'solar_system.titleEris' }}}</h2> 
+				<p class='lead categorie'>{{{__ 'solar_system.categorie4' }}}</p>
+			</div>
+			<img src='media/images/systeme_solaire/eris.jpg' class='d-block mx-lg-auto img-fluid astre' alt='Bootstrap Themes' loading='lazy' />
+			<div class=" mx-auto col-10 col-sm-8 col-lg-6 my-3 py-3">
+				<p>{{{__ 'solar_system.contentEris' }}}</p>
+				<p class="lead">{{{__ 'solar_system.lune' }}}</p>
+				<p class="">{{{__ 'solar_system.luneEris' }}}</p>
+			</div>
+		</div>
+	</div>
+</main>
+<div id="source">
+    <p> {{{__ 'solar_system.source'}}} </p>
+</div>
+{{> footer}}
+<script type="text/javascript" src="js/systeme_solaire.js"></script>
+{{> foot}}

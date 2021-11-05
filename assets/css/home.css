@@ -1,0 +1,59 @@
+body {
+    color: white;
+}
+
+.parallax-windows {
+    height: 100vh;
+}
+
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+    text-align: center;
+}
+
+.titre {
+    font-size: 75px;
+    opacity: 0;
+}
+#header h1 {
+    transform: translateY(170px);
+    z-index: 5;
+}
+#logo img {
+    z-index: -5;
+}
+
+.nav {
+    font-size: 25px;
+    justify-self: space-around;
+    letter-spacing: 4px;
+    opacity: 0;
+    margin-top: 25px;
+}
+.nav a {
+    margin: 0 15px;
+}
+.titre.visible {
+    opacity: 1;
+    font-size: 110px;
+    transition: all 3s ease-in-out;
+}
+.nav.visible {
+    opacity: 1;
+    transition: all 2s ease-in-out 1.5s;
+}
+footer {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+footer span {
+    padding: 0 10px;
+    background-color: black;
+    border-radius: 50px;
+}

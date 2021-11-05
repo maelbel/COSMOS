@@ -1,0 +1,37 @@
+{{> head}}
+<link rel="stylesheet" href="css/presentation.css">
+{{> header}}
+
+<div class='position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-dark' id='header'>
+  <div class='col-md-5 p-lg-5 mx-auto img-fluid my-5'>
+    <h1 class='display-4 fw-normal'>{{__ 'presentation.title1' }}</h1> 
+    <p class='lead fw-normal'>{{__ 'presentation.content1' }}</p>
+    <a class='btn btn-outline-secondary' href='#bottom'>{{__ 'common.button' }}</a>
+  </div>
+</div>
+<div class="container col-xxl-8 px-4 py-5" id="bottom">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img src="media/images/trounoir.jpg" class="d-block mx-lg-auto img-fluid" alt="trou_noir" width="900" height="500" loading="lazy">
+      </div>
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold lh-1 mb-3 text-light">{{__ 'presentation.title2' }}</h1>
+        <p class="lead text-white">{{__ 'presentation.content2' }}</p>
+      </div>
+    </div>
+  </div>
+  <div class="container col-xxl-8 px-4 py-5">
+    <div class="row flex-lg-row align-items-center g-5 py-5">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img src="media/images/systeme_solaire.jpg" class="d-block mx-lg-auto img-fluid" alt="systeme_solaire" width="900" height="700" loading="lazy">
+      </div>
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold lh-1 mb-3 text-light">{{__ 'presentation.title3' }}</h1>
+        <p class="lead text-white">{{__ 'presentation.content3' }}</p>
+        <a class='btn btn-outline-secondary' href="{{__ 'common.urlLink2' }}">{{__ 'common.button' }}</a>
+      </div>
+    </div>
+  </div>
+
+{{> footer}}
+{{> foot}}

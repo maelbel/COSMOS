@@ -1,0 +1,25 @@
+.basique {
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-image: url(../media/images/bgdefault.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    color: black;
+}
+.basique div {
+    width: 100%;
+    padding: 75px 0;
+    transform: translateY(-50px);
+    background-color: #eee;
+}
+.basique h1 {
+    font-size: 50px;
+}
+.basique p {
+    font-size: 25px;
+}

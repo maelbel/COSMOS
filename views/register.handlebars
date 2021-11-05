@@ -1,0 +1,60 @@
+{{> head}}
+<link rel="stylesheet" href="css/contact-us.css">
+<style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+</style>
+{{> header}}
+
+<div class="text-center" id="bodyContact">
+  
+    <main class="form-signin">
+        <form action="/register" method="POST">
+          <img class="mb-4" src="media/images/logo.png" alt="logo" width="72" height="72">
+          <h1 class="h3 mb-3 fw-normal">{{__ 'signup.titre'}}</h1>
+
+          {{#if message }}
+            <div style="text-align: center;" class="alert alert-{{ message.type }}">
+              <strong>{{ message.intro }}</strong> {{ message.message }}
+            </div>
+          {{/if}}
+
+          <div class="form-floating text-dark">
+            <input type="text" name="name" class="form-control" id="floatingName" placeholder="name">
+            <label for="floatingName">{{__ 'signup.name'}}</label>
+          </div>
+          <div class="form-floating text-dark">
+              <input type="email" name="email" class="form-control" id="floatingMail" placeholder="name@example.com">
+              <label for="floatingMail">{{__ 'signup.email'}}</label>
+          </div>
+          <div class="form-floating text-dark">
+              <input type="password" name="password" class="form-control" id="floatingPassword" placeholder="Password">
+              <label for="floatingPassword">{{__ 'signup.mdp'}}</label>
+          </div>
+          <div class="form-floating text-dark">
+            <input type="password" name="confirm" class="form-control" id="floatingConfirm" placeholder="Confirm password">
+            <label for="floatingConfirm">{{__ 'signup.confirm'}}</label>
+          </div>
+          <div class="form-floating text-dark" style="margin-bottom: 20px;">
+            <a href="{{__ 'signup.url'}}">{{__ 'signup.urlContent'}}</a>
+          </div>
+          
+          <button class="w-100 btn btn-outline-light btn-lg" type="submit">{{__ 'signup.button'}}</button>
+        </form>
+    </main>
+</div>
+
+{{> footer}}
+
+{{> foot}}

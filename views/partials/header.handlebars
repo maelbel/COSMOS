@@ -1,0 +1,49 @@
+</head>
+<body>
+    <!-- Cette valeur sera différente en fonction de la route car elle provient d'un fichier spécifique. -->
+    <div class='default layout'>
+
+        <header id='ancre_top'>
+            <div class='header'>
+                <div class='menu'>
+                    <h1 class="title"><a href="{{ __ 'common.urlLink1' }}">{{ __ 'common.title'}}</a></h1> 
+                    <div class='btn-menu'><a href="{{ __ 'common.urlLink1' }}">{{ __ 'common.link1' }}</a><a href="{{__ 'common.urlLink2' }}">{{__ 'common.link2' }}</a>
+                    </div>
+                    <div class='nav-bar'> <a href="{{url}}?lang=fr">{{__ 'common.lang1' }}</a>  <a href='{{url}}?lang=en'> {{__ 'common.lang2' }}</a>  <a href='{{url}}?lang=co'> {{__ 'common.lang3' }}</a>  <span> | </span>
+
+                    {{#if userName}}
+                    <div class="account">
+                        <img src="media/images/account_img.png" alt="account_img"/>
+                        <div class="user">
+                            <span>{{userName}}</span>
+                            <a href="/logout">{{__ 'common.logout' }}</a>
+                        </div>
+                    </div>
+                    {{else}}
+                        <a class="btn btn-outline-light" href="{{__ 'common.urlContact' }}">{{__ 'common.contact' }}</a>
+                    {{/if}}
+                    </div>
+                </div>
+                <div id='menu'>
+                   <div class='menu'>
+                        <h1 class="title"><a href='/'>{{__ 'common.title' }}</a></h1> 
+                        <div class='btn-menu'><a href="{{__ 'common.urlLink1' }}">{{__ 'common.link1' }}</a><a href="{{__ 'common.urlLink2' }}">{{__ 'common.link2' }}</a>
+                        </div>
+                        <div class='nav-bar'> <a href="{{url}}?lang=fr">{{__ 'common.lang1' }}</a>  <a href='{{url}}?lang=en'> {{__ 'common.lang2' }}</a>  <a href='{{url}}?lang=co'> {{__ 'common.lang3' }}</a>  <span> | </span>
+
+                        {{#if userName}}
+                        <div class="account">
+                            <img src="media/images/account_img.png" alt="account_img"/>
+                            <div class="user">
+                                <span>{{userName}}</span>
+                                <a href="/logout">{{__ 'common.logout' }}</a>
+                            </div>
+                        </div>
+                        {{else}}
+                            <a class="btn btn-outline-light" href="{{__ 'common.urlContact' }}">{{__ 'common.contact' }}</a>
+                        {{/if}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>

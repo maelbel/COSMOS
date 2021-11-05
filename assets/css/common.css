@@ -1,0 +1,157 @@
+body{
+    background-color: #000;
+    color:#fff;
+    font-family: "Bariol Regular";
+    font-size: 1.12rem;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+li, ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* START */
+/* ANCRE */
+.ancre {
+    position: fixed;
+    bottom: 0px;
+    right: 2rem;
+    z-index: 5;
+    padding: .6rem;
+    padding-bottom: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.65);
+
+    border: 2px solid rgba(204, 204, 204, 0.65);
+    border-bottom: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+    transition: all .4s ease-out;
+}
+.ancre:hover {
+    padding-bottom: 2rem;
+    transition: all .4s ease-out;
+}
+.arrow {
+    width: 50px;
+    height: 50px;
+}
+.ancre:hover {
+    background-color: #aaaaaa;
+    transition: all .4s ease-out;
+}
+.header {
+    padding: 10px 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    z-index: 10;
+}
+
+.menu {
+    width: 85%;
+    height: 50px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu > a {
+    flex: 1;
+    margin-left: 40px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+.btn-menu {
+    justify-content: flex-start;
+    flex: 1;
+    margin-left: 25px;
+}
+.btn-menu a {
+    margin: 0 10px;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-bar a {
+    margin: 0 10px;
+}
+
+.account {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+}
+.account img {
+    height: 50px;
+}
+
+.user {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+}
+.user span {
+    font-weight: bold;
+}
+.user a {
+    font-size: 0.9rem;
+    margin: 0;
+    color: #aaaaaa;
+    text-decoration: underline;
+}
+
+#menu {
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    position: fixed;
+    width: 100%;
+    justify-content: space-around;
+    top: 0;
+    z-index: 100;
+    height: 70px;
+    padding-top: 10px;
+}
+
+.astre {
+    max-width: 280px;
+    max-height: 280px;
+}
+
+footer {
+    text-align: center;
+}
+.title {
+    font-family: "Buick";
+}
+@font-face {
+    font-family: "Buick";
+    src: url("../fonts/buick_rounded.ttf")
+}
+@font-face {
+    font-family: "Odin";
+    src: url("../fonts/Odin_Rounded_Bold.otf")
+}
+@font-face {
+    font-family: "Bariol Regular";
+    src: url("../fonts/Bariol_Regular.otf")
+}
+@font-face {
+    font-family: "Bariol Italic";
+    src: url("../fonts/Bariol_Regular_Italic.otf")
+}
