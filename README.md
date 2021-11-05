@@ -10,5 +10,8 @@ I used the following modules:
 - express-session
 - path
 - mongoose
+- mongoose-unique-validator
+- bcrypt
+- dotenv
 - cookieParser
 - i18n
