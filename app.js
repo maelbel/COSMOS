@@ -14,7 +14,7 @@ const i18n = require('i18n');
 const userRoutes = require('./routes/user');
 
 // Set up mongoose connection
-mongoose.connect('mongodb+srv://mael:kpdlKfOmJ5JmS1yf@cluster0.jecvo.mongodb.net/cosmos?retryWrites=true&w=majority',
+mongoose.connect('mongodb+srv://mael:<password>@cluster0.jecvo.mongodb.net/cosmos?retryWrites=true&w=majority',
   { useNewUrlParser: true,
     useUnifiedTopology: true })
   .then(() => console.log('Connexion à MongoDB réussie !'))
