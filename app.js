@@ -13,43 +13,45 @@ const i18n = require('i18n');
 
 const userRoutes = require('./routes/user');
 
+const link = process.env.MONGOOSE_LINK;
+
 // Set up mongoose connection
-mongoose.connect('mongodb+srv://mael:<password>@cluster0.jecvo.mongodb.net/cosmos?retryWrites=true&w=majority',
+mongoose.connect(link,
   { useNewUrlParser: true,
     useUnifiedTopology: true })
   .then(() => console.log('Connexion à MongoDB réussie !'))
   .catch(() => console.log('Connexion à MongoDB échouée !'));
 
 
-  i18n.configure({
-    // setup some locales - other locales default to en silently
-    locales: ['fr', 'en', 'co'],
-  
-    // you may alter a site wide default locale
-    defaultLocale: 'fr',
-  
-    // sets a custom cookie name to parse locale settings from - defaults to NULL
-    cookie: 'lang',
-  
-    // sets a custom header name to read the language preference from - accept-language header by default
-    header: 'accept-language',
-  
-    // query parameter to switch locale (ie. /home?lang=ch) - defaults to NULL
-    queryParameter: 'lang',
-  
-    // where to store json files - defaults to './locales' relative to modules directory
-    directory: path.join(__dirname, '/locales'),
+i18n.configure({
+  // setup some locales - other locales default to en silently
+  locales: ['fr', 'en', 'co'],
 
-    objectNotation: true,
-  
-    // set the language catalog statically
-    // also overrides locales
-    staticCatalog: {
-      fr: require(path.join(__dirname, '/locales/fr/translation.json')),
-      en: require(path.join(__dirname, '/locales/en/translation.json')),
-      co: require(path.join(__dirname, '/locales/co/translation.json'))
-    }
-  })
+  // you may alter a site wide default locale
+  defaultLocale: 'fr',
+
+  // sets a custom cookie name to parse locale settings from - defaults to NULL
+  cookie: 'lang',
+
+  // sets a custom header name to read the language preference from - accept-language header by default
+  header: 'accept-language',
+
+  // query parameter to switch locale (ie. /home?lang=ch) - defaults to NULL
+  queryParameter: 'lang',
+
+  // where to store json files - defaults to './locales' relative to modules directory
+  directory: path.join(__dirname, '/locales'),
+
+  objectNotation: true,
+
+  // set the language catalog statically
+  // also overrides locales
+  staticCatalog: {
+    fr: require(path.join(__dirname, '/locales/fr/translation.json')),
+    en: require(path.join(__dirname, '/locales/en/translation.json')),
+    co: require(path.join(__dirname, '/locales/co/translation.json'))
+  }
+})
 // initialized and ready to go!
 
 const app = express();

@@ -1,5 +1,4 @@
 const bcrypt = require('bcrypt');
-const i18n = require('i18n');
 
 const User = require('../models/user');
 
@@ -7,15 +6,15 @@ exports.signup = (req, res, next) => {
   if(req.body.name == '' || req.body.email == '' || req.body.password == '' || req.body.confirm == ''){
     req.session.message = {
       type: 'danger',
-      intro: "{{__ 'signup.iEmptyFields'}}",
-      message: "{{__ 'signup.cEmptyFields'}}"
+      intro: "signup.iEmptyFields",
+      message: "signup.cEmptyFields"
     }
     res.redirect('/register');
   } else if (req.body.password != req.body.confirm){
     req.session.message = {
       type: 'danger',
-      intro: "{{__ 'signup.iWrongPass'}}",
-      message: "{{__ 'signup.cWrongPass'}}"
+      intro: "signup.iWrongPass",
+      message: "signup.cWrongPass"
     }
     res.redirect('/register');
   } else {
@@ -30,8 +29,8 @@ exports.signup = (req, res, next) => {
         else {
           req.session.message = {
             type: 'success',
-            intro: "{{__ 'signup.iUserCreated'}}",
-            message: "{{__ 'signup.cUserCreated'}}"
+            intro: "signup.iUserCreated",
+            message: "signup.cUserCreated"
           }
           res.redirect('/login');
         }
@@ -44,8 +43,8 @@ exports.login = (req, res, next) => {
   if(req.body.email == '' || req.body.password == ''){
     req.session.message = {
       type: 'danger',
-      intro: "{{__ 'signin.iEmptyFields'}}",
-      message: "{{__ 'signin.cEmptyFields'}}"
+      intro: "signin.iEmptyFields",
+      message: "signin.cEmptyFields"
     }
     res.redirect('/login');
   } else {
@@ -53,8 +52,8 @@ exports.login = (req, res, next) => {
       if(!user){
         req.session.message = {
           type: 'danger',
-          intro: "{{__ 'signin.iIncorrectMail'}}",
-          message: "{{__ 'signin.iIncorrectMail'}}"
+          intro: "signin.iIncorrectMail",
+          message: "signin.iIncorrectMail"
         }
         res.redirect('/login');
       } else {
@@ -62,8 +61,8 @@ exports.login = (req, res, next) => {
           if(!result){
             req.session.message = {
               type: 'danger',
-              intro: "{{__ 'signin.iWrongPass'}}",
-              message: "{{__ 'signin.cWrongPass'}}"
+              intro: "signin.iWrongPass",
+              message: "signin.cWrongPass"
             }
             res.redirect('/login');
           } else {

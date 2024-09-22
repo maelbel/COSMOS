@@ -2,7 +2,7 @@
     "common": {
         "title": "COSMOS",
         "lang": "fr",
-        "copyright": "<span>© Tous droits réservés - 2021</span>",
+        "copyright": "<span>© Tous droits réservés - 2024</span>",
         "link1": "Présentation",
         "urlLink1": "?lang=fr",
         "link2": "Système Solaire",
@@ -31,7 +31,7 @@
         "lune": "<u>Satellite(s) Naturel(s)</u>",
         "luneNone": "Aucun",
         "titleSS": "Le Système solaire",
-        "noteSS":"Copié et modifié depuis ce <a href='http://solar-system.florian-valois.com'><u>site</u></a>",
+        "noteSS":"Modifié depuis ce <a href='http://solar-system.florian-valois.com'><u>site</u></a>",
         "contentSS": "Le Système solaire est le système planétaire du Soleil, auquel appartient la Terre. De façon schématique, le Système solaire est composé par ordre de distance croissante par rapport au Soleil, de quatre planètes telluriques internes (Mercure, Vénus, la Terre et Mars), d'une ceinture d'astéroïdes composée de petits corps rocheux, de quatre planètes géantes externes gazeuses (Jupiter, Saturne, Uranus et Neptune) et de la ceinture de Kuiper, composée elle-même d’objets glacés. Le système solaire fait partie de la galaxie appelée Voie lactée.",
         "titleP": "Planètes",
         "titlePN": "Planètes naines",

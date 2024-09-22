@@ -2,7 +2,7 @@
     "common": {
         "title": "COSMOS",
         "lang": "co",
-        "copyright": "© Tutti i diritti riservati - 2021",
+        "copyright": "© Tutti i diritti riservati - 2024",
         "link1": "Prisentazione",
         "urlLink1": "?lang=co",
         "link2": "Sistema Sulare",
@@ -30,7 +30,7 @@
         "lune": "<u>Satellite Naturale (i)</u>",
         "luneNone": "Innò",
         "titleSS": "U Sistema sulare",
-        "noteSS":"Copiatu è mudificatu da stu <a href='http://solar-system.florian-valois.com'><u>situ</u></a>",
+        "noteSS":"Mudificatu da stu <a href='http://solar-system.florian-valois.com'><u>situ</u></a>",
         "contentSS": "U Sistema Solare hè u sistema planetariu di u Sole, à u quale appartene a Terra. Schematicamente, u Sistema Solare hè cumpostu, per ordine di distanza crescente da u Sole, di quattru pianeti telurici interni (Mercuriu, Venere, Terra è Marte), una cintura di asteroidi cumposta da picculi corpi rocciosi, quattru pianeti esterni gassosi giganti (Giove , Saturnu, Uranu è Nettunu) è a cintura di Kuiper, stessa cumposta da oggetti ghjalati. U sistema solare face parte di a galassia chjamata Via Lattea.",
         "titleP": "Pianeti",
         "titlePN": "Pianete nane",

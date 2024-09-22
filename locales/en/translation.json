@@ -2,7 +2,7 @@
     "common": {
         "title": "COSMOS",
         "lang": "en",
-        "copyright": "© All rights reserved - 2021",
+        "copyright": "© All rights reserved - 2024",
         "link1": "Presentation",
         "urlLink1": "?lang=en",
         "link2": "Solar System",
@@ -31,7 +31,7 @@
         "lune": "<u>Natural satellite</u>",
         "luneNone": "None",
         "titleSS": "The Solar system",
-        "noteSS":"Copied and modified from this <a href='http://solar-system.florian-valois.com'><u>site</u></a>",
+        "noteSS":"Modified from this <a href='http://solar-system.florian-valois.com'><u>site</u></a>",
         "contentSS": "The Solar System is the planetary system of the Sun, to which the Earth belongs. Schematically, the Solar System is composed, in order of increasing distance from the Sun, of four internal telluric planets (Mercury, Venus, Earth and Mars), an asteroid belt made up of small rocky bodies, four giant gaseous outer planets (Jupiter, Saturn, Uranus and Neptune) and the Kuiper belt, itself made up of icy objects. The solar system is part of the galaxy called the Milky Way.",
         "titleP": "Planets",
         "titlePN": "Dwarf planets",
